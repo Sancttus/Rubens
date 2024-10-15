@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './dashboard.css'; // Importando o CSS responsivo
+import './dashboard.css'; 
 
 const DashboardPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,27 +14,30 @@ const DashboardPage = () => {
 
   return (
     <div className="dashboard-container">
-      {/* Menu Lateral */}
-      <div className="sidebar">
-        <h3>Menu</h3>
+    
+      <aside className="sidebar">
         <ul>
-          <li onClick={handleOptionClick} className="menu-item">Opção 1</li>
-          <li onClick={handleOptionClick} className="menu-item">Opção 2</li>
+          <li onClick={handleOptionClick}>Opção 1</li>
+          <li onClick={handleOptionClick}>Opção 2</li>
+          <li onClick={handleOptionClick}>Opção 3</li>
+          <li onClick={handleOptionClick}>Opção 4</li>
+          <li onClick={handleOptionClick}>Opção 5</li>
         </ul>
-      </div>
+      </aside>
 
-      {/* Conteúdo */}
-      <div className="content">
-        <h2>Dashboard</h2>
-      </div>
+     
+      <main className="main-content">
+        <h1>Bem-vindo ao Dashboard</h1>
+        <p>Selecione uma opção à esquerda para abrir um modal.</p>
+      </main>
 
-      {/* Modal */}
+    
       {isModalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <h3>Modal Aberto</h3>
-            <p>Conteúdo do Modal</p>
-            <button onClick={closeModal}>Fechar Modal</button>
+            <h2>Modal Aberto</h2>
+            <p>Conteúdo do modal.</p>
+            <button onClick={closeModal}>Fechar</button>
           </div>
         </div>
       )}

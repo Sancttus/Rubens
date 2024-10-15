@@ -4,6 +4,11 @@ import App from './App.jsx'
 import './index.css'
 import Login from './pages/Login.jsx';
 import Dashboard from './pages/Dashboard.jsx';
+
+import Alzheimer from './pages/Alzheimer.jsx';
+import Error from './pages/Error.jsx';
+
+
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -20,6 +25,15 @@ const router = createBrowserRouter([
       path:'/dashboard',
       element:<Dashboard/>
     },
+     {
+      path:'/alzheimer',
+      element:<Alzheimer/>
+    },
+    {
+      path:'/error',
+      element:<Error/>
+    },
+  
   ]
 
 }
