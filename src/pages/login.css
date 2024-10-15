@@ -1,0 +1,132 @@
+/* LoginPage.css */
+.box {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .login-box {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .login-card {
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .login-card p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-form input {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #6e8efb;
+    box-shadow: 0 0 8px rgba(110, 142, 251, 0.2);
+  }
+  
+  .login-button {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #6e8efb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #5a77e1;
+  }
+  
+  .login-button:active {
+    transform: scale(0.98);
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 15px;
+  }
+  
+  .login-footer {
+    margin-top: 20px;
+  }
+  
+  .login-footer a {
+    color: #6e8efb;
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .image-box {
+    flex: 1;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra toda a área sem distorções */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .login-box {
+      flex-direction: column;
+    }
+  
+    .login-card {
+      padding: 30px;
+    }
+  
+    .image-box {
+      height: 200px;
+    }
+  }
+  
